@@ -1,0 +1,263 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  
+}
+.container{
+    width: 100%;
+    height: 80vh;
+    border-bottom: 2px solid #40A578;
+    padding-top: 50px;
+    /* scroll in x */
+    overflow-x: auto;
+    background-image: linear-gradient(white, rgba(64, 165, 120, 0.2));
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    position: relative;
+    /* border: 2px solid red; */
+    
+    
+    
+}
+/* styling the scroll bar */
+/* Style the entire scrollbar */
+.container::-webkit-scrollbar {
+    height: 10px; /* Height of the scrollbar for horizontal scroll */
+    
+}
+
+/* Style the scrollbar thumb */
+.container::-webkit-scrollbar-thumb {
+    background-color: #40A578; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners */
+    border: 2px solid #ccc; /* Border around the thumb */
+   
+}
+.hang{
+    width: 250px;
+    
+    min-width: 200px;
+    height: auto;
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: visible;
+    /* width: fit-content; */
+    /* padding-left: 100px; */
+}
+.hang .div1{
+    width: 50px;
+    height: 50px;
+    /* border: 2px solid black; */
+    border-radius: 50%;
+    box-shadow: 0px 1px 18px -5px rgba(0,0,0,0.24);
+    user-select: none;
+    
+}
+.hang .div2{
+    height: 180px;
+    width: 1.5px;
+    /* border: 1px solid black; */
+    background-color: gray;
+    background-image: linear-gradient(rgb(201, 196, 196), rgba(0,0,0,0.8));
+    margin-left: 0.3px;
+}
+.hang .div3{
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+    border-radius: 50%;
+   
+  
+}
+.hang .div4{
+    width: 32px;
+    height: 7px;
+    background-color: black;
+    z-index: 100;
+}
+
+.hang .div5{
+    width: 150px;
+    height: 150px;
+    border: 1px solid white;
+    box-shadow: 0px 1px 18px -5px rgba(0,0,0,0.24);
+    border-radius: 3px;
+}
+.div1 img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.div5 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+    transform: scale(1.05);
+    object-fit: cover;
+    border: 1px solid white;
+    user-select: none;
+    
+}
+/* hang2 */
+.hang1{
+    z-index: 2;
+}
+.hang2{
+
+    position: absolute;
+    left: 90px;
+}
+.hang2 .div2{
+    height: 50px;
+}
+.hang2 .div5{
+    height: 200px;
+}
+/* hang3 */
+.hang3 .div2{
+    height: 250px;
+}
+.hang3 .div5{
+    height: 100px;
+    width: 150px;
+}
+/* hang4 */
+.hang4 .div2{
+    height: 100px;
+}
+.hang4 .div5{
+    height: 110px;
+    width: 200px;
+}
+/* hang5 */
+.hang5 .div2{
+    height: 50px;
+}
+.hang5 .div5{
+    height: 300px;
+    width: 220px;
+}
+/* hang6 */
+.hang6 .div2{
+    height: 120px;
+}
+.hang6 .div5{
+    height: 150px;
+    width: 220px;
+    z-index: 2;
+}
+/* hang7 */
+.hang7 .div2{
+    height: 80px;
+}
+.hang7 .div5{
+    height: 200px;
+    width: 250px;
+}
+/* hang8 */
+.hang8 .div2{
+    height: 300px;
+}
+.hang8 .div5{
+    height: 100px;
+    width: 150px;
+}
+
+/* changing the position of the box */
+.hang1{
+    position: relative;
+    left: 70px;
+}
+.hang2{
+
+    position: relative;
+    left: 6px;
+}
+.hang3{
+
+    position: relative;
+    left: -80px;
+}
+.hang4{
+    position: relative;
+    left: -220px;
+}
+.hang5{
+    position: relative;
+    left: -200px;
+}
+.hang6{
+    position: relative;
+    left: -200px;
+}
+.hang7{
+    position: relative;
+    left: -200px;
+}
+.hang8{
+    position: relative;
+    left: -200px;
+}
+/* styling hand-button */
+.hang-btn{
+    position: relative;
+    left: 130px;
+    border: none;
+    /* border: 2px solid red; */
+    margin-left: -150px;
+    
+}
+.hang-btn .div2{
+    height: 100px;
+    
+    border: none;
+    background-image: linear-gradient(rgb(201, 196, 196), rgba(0,0,0,0.8));
+
+}
+.hang-btn .div5{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    color: white;
+    background-color: #40A578;
+    box-shadow: 0px 1px 18px -5px rgba(0,0,0,0.24);
+    border: none;
+    font-family: sans-serif;
+    font-size: 12px;
+   
+}
+.hang-btn .div5 #plus{
+    display: inline-block;
+    border: 2px solid white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    margin-bottom: 5px;
+    font-size: 20px;
+   
+}
+#add-text{
+    color: #96e5c2;
+}
+/* arranging the position of the newly generated hang items */
+.shift-left {
+    transform: translateX(-320px);
+}
+
+
+
+
